@@ -13,6 +13,9 @@ from Bots.ChessBotList import register_chess_bot
 
 #   Simply move the pawns forward and tries to capture as soon as possible
 def manual_mover(player_sequence, board, time_budget, **kwargs):
+    for x in range(board.shape[0]-1):
+        if board[x,y] != "p"+color:
+                continue
     return (0,0), (0,0)
 
 #   Example how to register the function
